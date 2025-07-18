@@ -1,14 +1,106 @@
 body {
-    background: #d09ddd;
-    font-family: Times New Roman, Georgia;
+    background: #e8caf0;
+    
     text-align: center;
+    cursor: url('images/cursor.png'), auto;
+    
     
 }
 p {
-    color:  #65faff;
-    font-size: 50px;
+    color:  #f948e1;
+    
 }
-.main-text {
-    color: #2ca8d4;
-    font-size: 30px;
+
+
+.main_text {
+    color: #720078;
+    
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+  font-variation-settings: "wdth" 100;
+}
+.secondary_text {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 30px;
+  color: #9628f0d3;
+  
+}
+.text_with_katseye_symbol{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    gap: 8px;
+}
+.symbol{
+    width: 100px;
+    height: 100px;
+
+}
+.start{
+    margin-right:4px;
+}
+.end{
+    margin-left:4px;
+}
+
+.animated_image{
+    animation:move
+}
+
+.playlist-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px 0;
+}
+
+.playlist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f3e6fa;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.playlist-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.playlist-btn {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    font-variation-settings: "wdth" 100;
+    background: #9628f0d3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.playlist-btn:hover {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-variation-settings: "wdth" 100;
+    background: #720078;
 }
