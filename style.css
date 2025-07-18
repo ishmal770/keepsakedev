@@ -3,7 +3,12 @@ body {
     
     text-align: center;
     cursor: url('images/cursor.png'), auto;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    border: 24px solid transparent;
     
+    border-image: url('images/lace-border.png') 24 repeat;
     
 }
 p {
@@ -37,11 +42,12 @@ p {
     justify-content: center; 
     text-align: center;
     gap: 8px;
+    animation: bounce 1.2s infinite alternate;
 }
-.symbol{
+.symbol {
     width: 100px;
     height: 100px;
-
+    animation: bounce 1.2s infinite alternate;
 }
 .start{
     margin-right:4px;
@@ -77,6 +83,17 @@ p {
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 12px;
+    animation: wobble 1.2s infinite ease-in-out;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg) scale(1); }
+    15% { transform: rotate(-5deg) scale(1.05); }
+    30% { transform: rotate(3deg) scale(0.98); }
+    45% { transform: rotate(-3deg) scale(1.02); }
+    60% { transform: rotate(2deg) scale(0.99); }
+    75% { transform: rotate(-1deg) scale(1.01); }
+    100% { transform: rotate(0deg) scale(1); }
 }
 
 .playlist-btn {
@@ -104,3 +121,39 @@ p {
     font-variation-settings: "wdth" 100;
     background: #720078;
 }
+.members-btn {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s;
+    padding: 0 12px;
+}
+
+.members-btn:hover h1 {
+    background: #f948e1;
+    color: #fff;
+    border-radius: 12px;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.member_name {
+    font-family: "Schoolbell", cursive; 
+    font-size: 75px;
+    color: #f948e1; 
+    font-weight: bold;
+    margin: 12px 0 4px 0;
+    text-shadow: 2px 2px 8px #9628f0a0;
+    letter-spacing: 2px;
+}
+.member_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
