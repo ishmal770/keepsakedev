@@ -1,0 +1,14 @@
+body {
+    background: #d09ddd;
+    font-family: Times New Roman, Georgia;
+    text-align: center;
+    
+}
+p {
+    color:  #65faff;
+    font-size: 50px;
+}
+.main-text {
+    color: #2ca8d4;
+    font-size: 30px;
+}
